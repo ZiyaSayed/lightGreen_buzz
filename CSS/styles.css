@@ -1,0 +1,735 @@
+/* -------------CSS Reset------------- */
+*
+{
+    padding: 0rem;
+    margin: 0rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+:root
+{
+    --theme-color: #8ee4af;
+}
+
+/* -----------------------
+                        Styling Navigation bar 
+                                              ------------------------------ */
+nav
+{
+    box-shadow:  0 4px 7px -4px rgba(0,0,0,0.7); 
+}
+#navbar
+{
+    position: relative; 
+    top: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    margin-bottom: 0rem;
+    justify-content: space-around;
+}
+
+#navothers span
+{
+    font-size: 1.5rem;
+}
+/* --------------------Styling Logo---------------------- */
+#logo img
+{
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+#logo
+{
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+#logoName
+{
+    margin-top: 0.8rem;
+}
+
+#logoName span
+{
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+/* --------------------Styling Navigation list----------------- */
+#navlist
+{
+    width: 50%;
+    color: gray;
+}
+#navlist ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#navlist ul li
+{
+    list-style: none;
+
+}
+
+#navlist ul li a
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+#navlist ul li a:hover
+{
+    text-decoration: none;
+    color: var(--theme-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* -----------------Styling Navigation others-------------- */
+#navothers
+{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navothers span
+{
+    color: var(--theme-color);
+}
+
+/*---------------------
+                        Styling Home Section 
+                                            ----------------------*/
+
+#home
+{
+    position: relative;
+    padding: 3rem 4rem;
+    font-weight: 100;
+}
+
+#home:before
+{
+    content: "";
+    background: url('../img/goxy-bgd-bZuY6hLtADU-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0rem;
+    left: 0rem;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#heading
+{
+    font-size: 4.5rem;
+    color: var(--theme-color);
+    width: 60%;
+
+}
+
+#heading span:nth-child(1)
+{
+    font-weight: 700;
+}
+
+#heading span:nth-child(2)
+{
+    border-bottom: 4px solid var(--theme-color);
+}
+
+#headertext
+{
+    width: 60%;
+    padding: 40px 0rem;
+}
+
+#home button
+{
+    background-color: white;
+    border-radius: 20px;
+    border-color: var(--theme-color);
+    font-size: 1.6rem;
+    width: 15rem;
+    height: 3rem;
+    font-weight: 600;
+    color: var(--theme-color);
+}
+
+#home button:hover
+{
+    background-color: var(--theme-color);
+    border-radius: 20px;
+    font-size: 1.6rem;
+    width: 15rem;
+    height: 3rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+/* -------------------
+                    Styling Services section
+                                            ------------------- */
+
+#services
+{
+    margin: 4rem;
+}
+
+#servicesContent
+{
+    margin: 2rem 4rem;
+    position: relative;
+    display: flex;
+    left: 3rem;
+    padding: 2rem;
+    width: 70%;
+}
+
+#servicesContent span
+{
+    padding-right: 0.8rem;
+    padding-top: 0.6rem;
+
+}
+#servicesContent h2
+{
+    padding-bottom: 1rem;
+}
+
+#servicesContent h2 span
+{
+    border-bottom: 0.2rem solid var(--theme-color);
+}
+
+/* --------------Styling Product section------------------ */
+
+
+#productNavbar
+{
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    padding: 1.2rem;
+    background-color: var(--theme-color);
+}
+
+#productNavbar ul
+{
+    position: relative;
+    display: flex;
+    margin: 2rem 4rem;
+    list-style: none;
+}
+
+#productNavbar ul li a
+{
+    text-decoration: none;
+    padding: 0rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#productNavbar ul li a:hover
+{
+    text-decoration: none;
+    padding: 0rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: rgb(92 169 92);
+    color: white;
+}
+
+/* ----------------------Styling product Cards----------------- */
+
+#productCards
+{
+    margin: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.card
+{
+    position: relative;
+    height: 300px;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card button
+{
+    position: relative;
+    top: 10rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.card p
+{
+    position: relative;
+    top: 10rem;
+    padding: 1rem;
+}
+#card-1:before
+{
+    content: "";
+    background: url('../img/pexels-fauxels-3184450.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#card-2:before
+{
+    content: "";
+    background: url('../img/hexagon-1743514_1280.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#card-3:before
+{
+    content: "";
+    background: url('../img/pexels-mikhail-nilov-6930902.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#card-4:before
+{
+    content: "";
+    background: url('../img/pexels-cottonbro-4965829.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#card-5:before
+{
+    content: "";
+    background: url('../img/social-media-5187243_1280.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#card-6:before
+{
+    content: "";
+    background: url('../img/pexels-artem-podrez-5716034.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#card-7:before
+{
+    content: "";
+    background: url('../img/startup-594090_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+#card-8:before
+{
+    content: "";
+    background: url('../img/pexels-anna-shvets-3727511.jpg') no-repeat center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+/* -----------------------Styling Work section------------ */
+
+#workNavbar
+{
+    display: grid;
+    color: white;
+    grid-template-columns: 15% 60% 25%;
+    background-color: var(--theme-color);
+    position: relative;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+#workNavbar span
+{
+    font-size: 5rem;
+}
+
+#workNavbar h2
+{
+    font-size: 2rem;
+}
+#workNavbar button
+{
+    background-color: rgb(18 154 91);
+    color: white;
+    box-shadow: 4px 4px 1px grey;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#workNavbar p
+{
+    padding: 0.3rem 1rem;
+}
+
+/* --------Styling Recent------------ */
+
+#recent
+{
+    padding: 3rem;
+}
+
+
+
+#recentGrid
+{
+    padding: 4rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.recentCard
+{
+    position: relative;
+    height: 250px;
+    margin: 2rem;
+}
+
+.recentCard h3
+{
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+}
+.recentCard p
+{
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+}
+
+#recentCard-1::before
+{
+    content:"";
+    background: url('../img/pexels-cristian-dina-1851415.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: 5px 5px 12px grey;
+}
+
+#recentCard-2::before
+{
+    content:"";
+    background: url('../img/pexels-serpstat-572056.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: 5px 5px 12px grey;
+}
+
+#recentCard-3::before
+{
+    content:"";
+    background: url('../img/pexels-lukas-590022.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: 5px 5px 12px grey;
+}
+
+#recentCard-4::before
+{
+    content:"";
+    background: url('../img/pexels-fauxels-3184465.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: 5px 5px 12px grey;
+}
+
+#recentCard-5::before
+{
+    content:"";
+    background: url('../img/pexels-kaboompics-com-6372.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: 5px 5px 12px grey;
+}
+
+#recentCard-6::before
+{
+    content:"";
+    background: url('../img/pexels-monstera-6373540.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: 5px 5px 12px grey;
+}
+
+/* --------------------Styling About Us--------------------- */
+
+#about
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 23% 23% 20%;
+    grid-column-gap: 0.8rem;
+    background-color: var(--theme-color);
+    color: white;
+    padding: 3rem;
+}
+
+#about div
+{
+    padding-right: 1rem;
+}
+
+#about h2
+{
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+
+#logoAbout
+{
+    position: relative;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#logoAboutText
+{
+    font-size: 2rem;
+}
+#logoAbout img
+{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.6rem;
+}
+
+#socialIcons span
+{
+    margin: 0.3rem;
+}
+/* ----------Our Company------------- */
+#ourCompany ul 
+{
+    list-style-type: "> ";
+}
+
+#ourCompany ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------Our Works----------- */
+#ourWorks ul 
+{
+    list-style-type: "> ";
+}
+
+#ourWorks ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------For Clients---------------- */
+
+#forClient span
+{
+    font-size: 1rem;
+    padding-right: 0.3rem;
+}
+
+/* --------------Styling Footer---------------- */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: rgb(98 179 129);
+}
+/* ------------------Styling Custom Classes---------------- */
+.center
+{
+    text-align: center;
+}
+
+.primaryHeading
+{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* ----------Little Responsive style-------- */
+
+@media(max-width: 998px)
+{
+    html 
+    {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 774px)
+{
+    html 
+    {
+        font-size: 70%;
+    }
+
+    #productCards
+    {
+    margin: 6rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media(max-width: 540px)
+{
+    html 
+    {
+        font-size: 60%;
+    }
+
+    #productCards
+    {
+    margin: 6rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    }
+
+    #recentGrid
+    {
+    padding: 4rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media(max-width: 398px)
+{
+    html 
+    {
+        font-size: 50%;
+    }
+
+    #productCards
+    {
+    margin: 6rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    }
+
+    #recentGrid
+    {
+    padding: 4rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    }
+}
+
+/* -------------------Making Navbar responsive---------- */
+
+@media(max-width: 450px)
+{
+
+   
+
+    #navlist
+    {
+        width: 85%;
+        color: gray;
+    }
+    #navlist ul
+    {
+        display: flex;
+    }
+
+#logo p 
+{
+    display: none;
+}
+#navothers
+{
+    display: none;
+}
+}
